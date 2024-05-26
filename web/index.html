@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rate My Day</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <span
+      id="date"
+      hx-get="/api/date"
+      hx-trigger="load"
+      hx-swap="innerHTML"
+    ></span>
+    <div hx-get="/api/tasks/today" hx-trigger="load"></div>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <script></script>
+  </body>
+</html>

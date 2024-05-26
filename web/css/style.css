@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+span.left {
+  float: left
+}
+
+span.right {
+  float: right;
+}

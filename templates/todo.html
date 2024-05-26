@@ -1,0 +1,12 @@
+<ul>
+  {{range .Tasks}}
+  <li>
+    {{if .Done}}
+    <input type="checkbox" name="task_{{.Id}}" checked />
+    {{else}}
+    <input type="checkbox" name="task_{{.Id}}" />
+    {{end}}
+    <label for="task_{{.Id}}">{{.Task}}</label>
+  </li>
+  {{end}}
+</ul>
